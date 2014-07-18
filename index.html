@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <title>Oauth2 Demo Using Google Auth</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+        <link rel="stylesheet" href="styles/vendor.css">
+
+        <link rel="stylesheet" href="styles/main.css">
+
+        <script src="scripts/vendor/modernizr.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container">
+            <div class="header">
+                <ul class="nav nav-pills pull-right">
+                    <li id="userinfo"></li>
+                </ul>
+                <h3 class="text-muted">Oauth2 Demo</h3>
+            </div>
+
+            <div class="jumbotron">
+                <h1>'Allo, 'Allo!</h1>
+                <div id="login">
+                    <input class="btn btn-lg btn-primary hide" id="loginButton" type="button" value="Authorize this app with Google"/>
+                </div>
+                <div id="logout">
+                    <a class="btn btn-lg btn-primary hide" id="logoutButton" onclick="revokeauth"> Revoke Token </a>
+                </div>
+            </div>
+            <div class="footer">
+                <p>The Zatar Team</p>
+            </div>
+        </div>
+
+        <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/plugins.js"></script>
+
+        <script src="scripts/main.js"></script>
+        <script src="https://apis.google.com/js/client.js?onload=init"></script>
+
+</body>
+</html>
